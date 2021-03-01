@@ -1,9 +1,19 @@
-# latest-package-version
 
+# latest-package-version
 Get latest npm package version for list of packages in a JSON object format.
-<br/>
-Please note this will give you the latest package version based on NPM registry you have configured in your operating system.
+Note: this will give you the latest package version based on NPM registry you have configured in your operating system.
 If you have configured a private NPM registry then it will give you the latest version which is available in that registry.
+
+<br/>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/latest-package-version">
+    <img src="https://img.shields.io/npm/v/strapi/latest.svg" alt="NPM Version" />
+  </a>
+  <a href="https://www.npmjs.com/package/latest-package-version">
+    <img src="https://img.shields.io/npm/dm/strapi.svg" alt="Monthly download on NPM" />
+  </a>
+</p>
 
 ## 🌟 Install
 
