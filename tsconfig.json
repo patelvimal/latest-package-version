@@ -1,14 +1,23 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
+    "outDir": "lib",
+    "target": "es5",
+    "module": "ESNext",
+    "lib": ["es2015"],
     "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
-    "lib": [ "es2015" ]
+    "declaration": true,
+    "esModuleInterop": true
   },
-  "exclude": ["example"]
+  "include": ["src"],
+  "exclude": ["node_modules", "lib", "**/*.test.ts","example"]
 }

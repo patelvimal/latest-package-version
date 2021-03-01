@@ -6,21 +6,26 @@ export async function executeCommand(
 ): Promise<string> {
     const childProcess: any = exec(command, options)
     let versionInfo: string;
+    let error: string;
     process.on('exit', () => childProcess.kill())
 
-    return new Promise<string>((res) => {
+    return new Promise<string>((resolve,reject) => {
 
         childProcess.stdout.on('data', (data: any) => {
-            //process.stdout.write(data);
-            versionInfo = data;
+            versionInfo = data.toString();
         })
 
         childProcess.stderr.on('data', (err: any) => {
-            process.stderr.write(err)
+            console.log(err);
+            error = err;
         })
 
         childProcess.on('close', (code: any) => {
-            res(versionInfo);
+            if (code == 0) {
+                resolve(versionInfo);
+            } else {
+                reject(error);
+            }
         })
     })
 }

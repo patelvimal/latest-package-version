@@ -2,23 +2,15 @@
   "name": "package-version",
   "version": "1.0.0",
   "description": "Get latest npm package version for list of packages in a json object format",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "tsc --p tsconfig.json",
+    "build": "rollup -c",
     "example": "ts-node example/main.ts",
-    "postbuild": "uglifyjs -mc -o dist/index.js dist/index.js dist/shell-command.js"
+    "postbuild": "uglifyjs -mc -o lib/index.js lib/index.js"
   },
-  "keywords": [
-    "info",
-    "npm",
-    "package",
-    "package.json",
-    "current",
-    "module",
-    "npm",
-    "information",
-    "version",
-    "author"
+  "files": [
+    "lib",
+    "package.json"
   ],
   "author": {
     "name": "Vimal Patel",
@@ -32,9 +24,22 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.14.31",
+    "rollup": "^2.40.0",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.2",
     "uglify-js": "^3.12.8"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "info",
+    "npm",
+    "package",
+    "package.json",
+    "current",
+    "module",
+    "npm",
+    "version",
+    "author"
+  ]
 }
