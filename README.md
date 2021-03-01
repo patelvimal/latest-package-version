@@ -1,4 +1,4 @@
-# package-version
+# latest-package-version
 
 Get latest npm package version for list of packages in a JSON object format.
 <br/>

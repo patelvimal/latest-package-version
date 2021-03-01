@@ -1,5 +1,5 @@
 {
-  "name": "package-version",
+  "name": "latest-package-version",
   "version": "1.0.0",
   "description": "Get latest npm package version for list of packages in a json object format",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patelvimal/package-version.git"
+    "url": "git//github.com/patelvimal/package-version.git"
   },
   "license": "ISC",
   "devDependencies": {
