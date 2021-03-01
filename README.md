@@ -8,10 +8,10 @@ If you have configured a private NPM registry then it will give you the latest v
 
 <p align="center">
   <a href="https://www.npmjs.com/package/latest-package-version">
-    <img src="https://img.shields.io/npm/v/strapi/latest.svg" alt="NPM Version" />
+    <img src="https://img.shields.io/npm/v/latest-package-version/latest.svg" alt="NPM Version" />
   </a>
   <a href="https://www.npmjs.com/package/latest-package-version">
-    <img src="https://img.shields.io/npm/dm/strapi.svg" alt="Monthly download on NPM" />
+    <img src="https://img.shields.io/npm/dm/latest-package-version.svg" alt="Monthly download on NPM" />
   </a>
 </p>
 
@@ -25,7 +25,7 @@ $ npm install -D latest-package-version
 ## 🔨 Usage Typescript
 
 ```js
-import { getPackageVersions } from 'package-version';
+import { getPackageVersions } from 'latest-package-version';
 (async function getVersions() {
     const { output, error } = await getPackageVersions(['react', 'vue']);
     console.log(output);
@@ -37,7 +37,7 @@ import { getPackageVersions } from 'package-version';
 ## 🔨 Usage Javascript
 
 ```js
-const pkg = require('package-version');
+const pkg = require('latest-package-version');
 
 (async function getVersions () {
     const {output} = await pkg.getPackageVersions(['vue','@angular/core','react']);
