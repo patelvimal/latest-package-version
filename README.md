@@ -8,7 +8,7 @@ If you have configured a private NPM registry then it will give you the latest v
 ## 🌟 Install
 
 ```sh
-$ npm install --save package-version
+$ npm install -D latest-package-version
 ```
 
 
