@@ -7,7 +7,7 @@ export function getPackageVersions(names: string[]): Promise<PkgVersionResponse>
     const promises = names.map(async pkg => {
         const version = await executeCommand(`npm view ${pkg} version json`);
         if (version) {
-            versionInfo[`"${pkg}"`] = `^${version.replace('\n', '')}`;
+            versionInfo[`${pkg}`] = `^${version.replace('\n', '')}`;
         }
 
     })
